@@ -17,6 +17,7 @@ Also, these benchmarks are run on a single version of Ruby, and within the conte
 ## Running it yourself
 
 ```
+bundle install
 rake db:create db:migrate
 rake benchmarks:all
 ```
