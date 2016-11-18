@@ -12,6 +12,8 @@ And of course, this is *just* a performance comparison. There are other aspects 
 * Do you have JSON structure requirements, such as JSON-API, JSON-HAL, etc?
 * Do you need something that handles serialising in formats other than JSON?
 
+Also, these benchmarks are run on a single version of Ruby, and within the context of a Rails app - doesn't hurt to run them yourself on your expected setup.
+
 ## Running it yourself
 
 ```
