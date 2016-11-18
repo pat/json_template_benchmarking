@@ -1,24 +1,31 @@
-# README
+# JSON Template Library Benchmarks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Currently extremely simple, comparing [Jbuilder](https://github.com/rails/jbuilder), [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers), [Roar](https://github.com/apotonick/roar), and [Oat](https://github.com/ismasan/oat). The latest committed results are [here](OUTPUT.markdown).
 
-Things you may want to cover:
+Patches are very much welcome for additional benchmarks that you feel are useful, or contributions that tweak libraries to get their best performance.
 
-* Ruby version
+And of course, this is *just* a performance comparison. There are other aspects to keep in mind when choosing libraries, such as:
 
-* System dependencies
+* How well maintained are they?
+* Do they work with the latest versions of Ruby?
+* Do you need something that is separate from Rails?
+* Do you have JSON structure requirements, such as JSON-API, JSON-HAL, etc?
+* Do you need something that handles serialising in formats other than JSON?
 
-* Configuration
+## Running it yourself
 
-* Database creation
+```
+rake db:create db:migrate
+rake benchmarks:all
+```
 
-* Database initialization
+Or, use the `benchmarks:write` to regenerate the [OUTPUT.markdown](OUTPUT.markdown) file.
 
-* How to run the test suite
+## Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Please note that this project is released with [a Contributor Code of Conduct](http://contributor-covenant.org/version/1/0/0/). By participating in this project you agree to abide by its terms.
 
-* Deployment instructions
+## Licence
 
-* ...
+Copyright (c) 2016, Drumknott is developed and maintained by Pat Allan, and is
+released under the open MIT Licence. It was strongly influenced by the work of [Kirill Platonov](https://kirillplatonov.com/2014/11/04/active_model_serializer_vs_jbuilder/) - I've just neatened things up, updated gem versions and added more libraries in.
