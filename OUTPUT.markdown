@@ -2,21 +2,21 @@
 
 ```
 Calculating -------------------------------------
-            jbuilder      1403 i/100ms
-                 ams      1401 i/100ms
-                roar       681 i/100ms
-                 oat      1432 i/100ms
+            jbuilder      1345 i/100ms
+                 ams      1357 i/100ms
+                roar       657 i/100ms
+                 oat      1457 i/100ms
 -------------------------------------------------
-            jbuilder    14518.9 (±5.3%) i/s -      72956 in   5.040252s
-                 ams    14495.6 (±11.0%) i/s -      71451 in   5.025996s
-                roar     7275.7 (±3.6%) i/s -      36774 in   5.060906s
-                 oat    16087.5 (±4.5%) i/s -      81624 in   5.083825s
+            jbuilder    14062.4 (±8.5%) i/s -      69940 in   5.019323s
+                 ams    14757.1 (±5.8%) i/s -      74635 in   5.075486s
+                roar     6904.7 (±10.4%) i/s -      34821 in   5.112213s
+                 oat    15634.5 (±8.8%) i/s -      78678 in   5.076946s
 
 Comparison:
-                 oat:    16087.5 i/s
-            jbuilder:    14518.9 i/s - 1.11x slower
-                 ams:    14495.6 i/s - 1.11x slower
-                roar:     7275.7 i/s - 2.21x slower
+                 oat:    15634.5 i/s
+                 ams:    14757.1 i/s - 1.06x slower
+            jbuilder:    14062.4 i/s - 1.11x slower
+                roar:     6904.7 i/s - 2.26x slower
 
 ```
 
@@ -26,44 +26,44 @@ Comparison:
 Calculating -------------------------------------
             jbuilder         7 i/100ms
     jbuilder_partial         6 i/100ms
-                 ams       430 i/100ms
-                roar       338 i/100ms
-                 oat       384 i/100ms
+                 ams       399 i/100ms
+                roar       310 i/100ms
+                 oat       427 i/100ms
 -------------------------------------------------
-            jbuilder       75.2 (±10.6%) i/s -        371 in   5.005000s
-    jbuilder_partial       52.7 (±9.5%) i/s -        264 in   5.049218s
-                 ams     4162.1 (±3.8%) i/s -      21070 in   5.069686s
-                roar     3018.3 (±7.5%) i/s -      15210 in   5.068744s
-                 oat     4142.2 (±14.7%) i/s -      19968 in   5.014306s
+            jbuilder       80.7 (±5.0%) i/s -        406 in   5.044893s
+    jbuilder_partial       61.6 (±4.9%) i/s -        312 in   5.075539s
+                 ams     4398.7 (±5.2%) i/s -      21945 in   5.002910s
+                roar     3357.3 (±5.6%) i/s -      16740 in   5.002101s
+                 oat     4549.4 (±5.7%) i/s -      23058 in   5.086184s
 
 Comparison:
-                 ams:     4162.1 i/s
-                 oat:     4142.2 i/s - 1.00x slower
-                roar:     3018.3 i/s - 1.38x slower
-            jbuilder:       75.2 i/s - 55.38x slower
-    jbuilder_partial:       52.7 i/s - 78.92x slower
+                 oat:     4549.4 i/s
+                 ams:     4398.7 i/s - 1.03x slower
+                roar:     3357.3 i/s - 1.36x slower
+            jbuilder:       80.7 i/s - 56.35x slower
+    jbuilder_partial:       61.6 i/s - 73.85x slower
 
 ```
 
-## Many object
+## Many objects
 
 ```
 Calculating -------------------------------------
-            jbuilder        86 i/100ms
-                 ams        56 i/100ms
-                roar        35 i/100ms
-                 oat        87 i/100ms
+            jbuilder        98 i/100ms
+                 ams        57 i/100ms
+                roar        32 i/100ms
+                 oat        74 i/100ms
 -------------------------------------------------
-            jbuilder      867.3 (±6.3%) i/s -       4386 in   5.077652s
-                 ams      595.2 (±10.2%) i/s -       2968 in   5.050000s
-                roar      374.8 (±6.4%) i/s -       1890 in   5.063935s
-                 oat      903.5 (±9.5%) i/s -       4524 in   5.069985s
+            jbuilder      994.5 (±4.5%) i/s -       4998 in   5.036242s
+                 ams      650.8 (±5.5%) i/s -       3306 in   5.096497s
+                roar      408.4 (±5.4%) i/s -       2048 in   5.030905s
+                 oat      972.0 (±5.8%) i/s -       4884 in   5.042133s
 
 Comparison:
-                 oat:      903.5 i/s
-            jbuilder:      867.3 i/s - 1.04x slower
-                 ams:      595.2 i/s - 1.52x slower
-                roar:      374.8 i/s - 2.41x slower
+            jbuilder:      994.5 i/s
+                 oat:      972.0 i/s - 1.02x slower
+                 ams:      650.8 i/s - 1.53x slower
+                roar:      408.4 i/s - 2.44x slower
 
 ```
 
@@ -71,23 +71,23 @@ Comparison:
 
 ```
 Calculating -------------------------------------
-            jbuilder         6 i/100ms
+            jbuilder         7 i/100ms
     jbuilder_partial         1 i/100ms
-                 ams        52 i/100ms
-                roar        33 i/100ms
-                 oat        77 i/100ms
+                 ams        55 i/100ms
+                roar        35 i/100ms
+                 oat        82 i/100ms
 -------------------------------------------------
-            jbuilder       65.9 (±10.6%) i/s -        330 in   5.074812s
-    jbuilder_partial        9.0 (±22.3%) i/s -         43 in   5.072580s
-                 ams      439.8 (±23.2%) i/s -       2080 in   5.120066s
-                roar      291.8 (±17.8%) i/s -       1452 in   5.168423s
-                 oat      773.0 (±10.3%) i/s -       3850 in   5.047239s
+            jbuilder       74.4 (±6.7%) i/s -        371 in   5.004653s
+    jbuilder_partial       10.1 (±19.7%) i/s -         49 in   5.015755s
+                 ams      539.0 (±9.3%) i/s -       2695 in   5.060235s
+                roar      325.5 (±11.1%) i/s -       1610 in   5.022183s
+                 oat      775.7 (±8.6%) i/s -       3854 in   5.020160s
 
 Comparison:
-                 oat:      773.0 i/s
-                 ams:      439.8 i/s - 1.76x slower
-                roar:      291.8 i/s - 2.65x slower
-            jbuilder:       65.9 i/s - 11.74x slower
-    jbuilder_partial:        9.0 i/s - 86.19x slower
+                 oat:      775.7 i/s
+                 ams:      539.0 i/s - 1.44x slower
+                roar:      325.5 i/s - 2.38x slower
+            jbuilder:       74.4 i/s - 10.42x slower
+    jbuilder_partial:       10.1 i/s - 76.45x slower
 
 ```
