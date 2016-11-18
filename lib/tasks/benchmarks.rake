@@ -171,7 +171,7 @@ namespace :benchmarks do
     append_to_output <<-TEXT
 \`\`\`
 
-## Many object
+## Many objects
 
 \`\`\`
     TEXT
