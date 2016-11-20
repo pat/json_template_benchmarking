@@ -30,5 +30,4 @@ Please note that this project is released with [a Contributor Code of Conduct](h
 
 ## Licence
 
-Copyright (c) 2016, Drumknott is developed and maintained by Pat Allan, and is
-released under the open MIT Licence. It was strongly influenced by the work of [Kirill Platonov](https://kirillplatonov.com/2014/11/04/active_model_serializer_vs_jbuilder/) - I've just neatened things up, updated gem versions and added more libraries in.
+Copyright (c) 2016. Developed and maintained by Pat Allan, and released under the open MIT Licence. It was strongly influenced by the work of [Kirill Platonov](https://kirillplatonov.com/2014/11/04/active_model_serializer_vs_jbuilder/) - I've just neatened things up, updated gem versions and added more libraries in.
