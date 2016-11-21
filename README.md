@@ -18,11 +18,11 @@ Also, these benchmarks are run on a single version of Ruby, and within the conte
 
 ```
 bundle install
-rake db:create db:migrate
-rake benchmarks:all
+rake db:create db:migrate RAILS_ENV=production
+rake benchmarks:all RAILS_ENV=production
 ```
 
-Or, use the `benchmarks:write` to regenerate the [OUTPUT.markdown](OUTPUT.markdown) file.
+Or, use the `benchmarks:write` to regenerate the [OUTPUT.markdown](OUTPUT.markdown) file. Using the production environment is recommended, to have templates cached appropriately (and thus, a better reflection of a real production environment).
 
 ## Contributing
 
