@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.0.1'
-gem 'sqlite3', '1.3.10'
+gem 'rails',   '~> 5.1.5'
+gem 'sqlite3', '~> 1.3.10'
 
-gem 'benchmark-ips',            '~> 2.0.0'
+gem 'benchmark-ips',            '~> 2.0'
 gem 'active_model_serializers', '~> 0.10.2'
 gem 'jbuilder',                 '~> 2.6'
 gem 'oat',                      '~> 0.5.0'
 gem 'render_anywhere', :require => false
-gem 'roar',                     '~> 1.0.3'
+gem 'roar',                     '~> 1.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
