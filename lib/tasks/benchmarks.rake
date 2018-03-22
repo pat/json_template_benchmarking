@@ -49,15 +49,15 @@ namespace :benchmarks do
       end
 
       bench.report 'ams' do
-        renderer.render :text => BookAmsSerializer.new(book).to_json
+        renderer.render :plain => BookAmsSerializer.new(book).to_json
       end
 
       bench.report 'roar' do
-        renderer.render :text => BookRoarSerializer.new(book).to_json
+        renderer.render :plain => BookRoarSerializer.new(book).to_json
       end
 
       bench.report 'oat' do
-        renderer.render :text => BookOatSerializer.new(book).to_json
+        renderer.render :plain => BookOatSerializer.new(book).to_json
       end
 
       bench.compare!
@@ -120,15 +120,15 @@ namespace :benchmarks do
       end
 
       bench.report 'ams' do
-        renderer.render :text => LibraryAmsSerializer.new(library).to_json
+        renderer.render :plain => LibraryAmsSerializer.new(library).to_json
       end
 
       bench.report 'roar' do
-        renderer.render :text => LibraryRoarSerializer.new(library).to_json
+        renderer.render :plain => LibraryRoarSerializer.new(library).to_json
       end
 
       bench.report 'oat' do
-        renderer.render :text => LibraryOatSerializer.new(library).to_json
+        renderer.render :plain => LibraryOatSerializer.new(library).to_json
       end
 
       bench.compare!
