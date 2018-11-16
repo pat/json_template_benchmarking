@@ -81,7 +81,7 @@ GEM
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     oat (0.5.2)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rails (5.1.6)
@@ -166,4 +166,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
