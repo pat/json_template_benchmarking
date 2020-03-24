@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',   '~> 5.1.5'
+gem 'rails',   '~> 5.2'
 gem 'sqlite3', '~> 1.3.10'
 
 gem 'benchmark-ips',            '~> 2.0'
